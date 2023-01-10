@@ -1,0 +1,118 @@
+.portfoliocontent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 4.5rem;
+    margin-top: 2rem;
+  }
+
+  .portfolio{
+    max-width: 82%;
+    margin: auto;
+  }
+  
+  .portfolioimg {
+    box-shadow: rgb(93, 75, 255) 0px 3px 8px;
+    border-radius: 0.5rem;
+    height: fit-content;
+    padding: 20px;
+  }
+  
+  .portfolioimg:hover {
+    box-shadow: rgb(1, 255, 242) 0px 3px 8px;
+    transition: 1s;
+    
+  }
+  
+  .projectimg {
+    width: 85%;
+    margin: auto;
+    display: block;
+  }
+  
+  .portfolioimg button {
+    padding: 5px 20px 5px 20px;
+    background-color: #033a80;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    justify-content: space-around;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .portfolioimg button:hover {
+    color: black;
+    border: none;
+    background-color: lightgrey;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--main-color);
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 17, 253, 0.35) 0px 5px 15px;
+  }
+  
+  .btn:hover {
+    background: var(--hover);
+    transition: 1s;
+  }
+
+  .projectName{
+    padding: 20px;
+    font-size:22px;
+    font-weight: bold;
+    color: #033a80;
+    margin-bottom: 10px;
+  }
+
+  .aboutProject{
+    border: 0px solid red;
+    background-color:#cbd5e0 ;
+    width: 86%;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: -200px;
+    border-radius: 5px;
+    padding: 4%;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    clip-path: inset(0 100% 0% 0);
+    transition: all 0.5s;
+  }
+  
+  .portfoliocontent:hover  .aboutProject{
+    margin-bottom: -120px;
+    clip-path: inset(0 0 2% 0);
+  }
+
+
+
+
+  .Techstacks{
+    border: 0px solid red;
+    background-color:#cbd5e0 ;
+    width:50%;
+    padding: 3%;
+    text-align: left;
+    margin-left: 43%;
+    margin-right: 7%;
+    font-weight: bold;
+    margin-top: -120px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    clip-path: inset(5% 0 15% 100%);
+    transition: all 0.5s;
+  }
+
+  .portfoliocontent:hover  .Techstacks{
+    margin-top: -60px;
+    clip-path: inset(0 0 2% 0);
+  }

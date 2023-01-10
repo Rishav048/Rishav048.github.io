@@ -1,4 +1,4 @@
-import  "./Navbar.css"
+
 import {
   Box,
   Flex,
@@ -10,7 +10,6 @@ import {
   Menu,
   MenuButton,
   useDisclosure,
-  useColorModeValue,
   Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
@@ -22,9 +21,11 @@ const NavLink = ({ children }) => (
     px={2}
     py={1}
     rounded={'md'}
+    color={'white'}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
+      color:'#f6c461'
+      
     }}
     href={'#'}>
     {children}
@@ -36,7 +37,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.300', 'gray.900')} px={4}>
+      <Box bg='#2a2b2b' px={4} mb='0.2vh' pl={'5vh'} pr={'5vh'} borderBottom={'2px solid black'}  boxShadow='2xl' >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} color={"black"} fontWeight={"bold"} >
           <IconButton
             size={'md'}
@@ -52,7 +53,7 @@ export default function Navbar() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((el) => (
-                <Box  _hover={{ fontWeight: 'semibold' , color:"#f6c461" , fontSize:"20px" }} >
+                <Box  _hover={{ fontWeight: 'semibold'  , fontSize:"20px" }} >
                 <NavLink key={el}>{el}</NavLink>
                 </Box>
               ))}
@@ -68,6 +69,7 @@ export default function Navbar() {
                 minW={0}>
                 <Avatar
                   size={'sm'}
+                  
                   src={
                     'https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-01-02/new_776068.jpeg'
                   }
