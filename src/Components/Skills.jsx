@@ -24,7 +24,7 @@ function Skills() {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
@@ -37,7 +37,7 @@ function Skills() {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false
               }
             },
             {
@@ -63,7 +63,7 @@ function Skills() {
 
 
   return (
-    <Box bg={'#cbd5e0'}>
+    <Box h={'fit-content'} bg={'#cbd5e0'}>
         <hr />
         <Heading textAlign={'center'} color={'blue.600'} >Skills</Heading>
         <Slider {...settings}>

@@ -5,6 +5,7 @@ import AboutMe from './Components/About';
 import Skills from './Components/Skills';
 import Educations from './Components/Educations';
 import Projects from './Components/Projects';
+import ContactMe from './Components/ContactMe';
 
 
 function App() {
@@ -21,8 +22,11 @@ function App() {
       <br />
       <hr />
       <br />
-     
       <Projects />
+      <br />
+      <hr />
+      <br />
+      <ContactMe />
      
 
 

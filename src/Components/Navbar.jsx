@@ -1,36 +1,21 @@
-
+import {Link} from "react-scroll"
 import {
   Box,
   Flex,
   Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
   MenuButton,
   useDisclosure,
-  Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    color={'white'}
-    _hover={{
-      textDecoration: 'none',
-      color:'#f6c461'
-      
-    }}
-    href={'#'}>
-    {children}
-  </Link>
-);
+
+
+
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -50,13 +35,24 @@ export default function Navbar() {
            
             <HStack
               as={'nav'}
-              spacing={4}
+              spacing={"80px"}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((el) => (
-                <Box  _hover={{ fontWeight: 'semibold'  , fontSize:"20px" }} >
-                <NavLink key={el}>{el}</NavLink>
+                <Box color="white"  _hover={{ borderBottom:"4px solid #F6C461", color:"#F6C461", fontWeight: 'semibold'  , fontSize:"20px" }} >
+                 Home
                 </Box>
-              ))}
+                <Box color="white"   _hover={{borderBottom:"4px solid #F6C461", color:"#F6C461", fontWeight: 'semibold'  , fontSize:"20px" }} >
+                About
+                </Box>
+                <Box color="white"   _hover={{borderBottom:"4px solid #F6C461", color:"#F6C461", fontWeight: 'semibold'  , fontSize:"20px" }} >
+                Skills
+                </Box>
+                <Box color="white"   _hover={{borderBottom:"4px solid #F6C461", color:"#F6C461", fontWeight: 'semibold'  , fontSize:"20px" }} >
+                Projects
+                </Box>
+                <Box color="white"  _hover={{borderBottom:"4px solid #F6C461", color:"#F6C461", fontWeight: 'semibold'  , fontSize:"20px" }} >
+                Contact
+                </Box>
+            
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -80,17 +76,7 @@ export default function Navbar() {
           </Flex>
         </Flex>
 
-        {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <Box className='TopBars' >
-                <NavLink key={link}>{link}</NavLink>
-                </Box>
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
+       
       </Box>
 
     

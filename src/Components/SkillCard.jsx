@@ -18,15 +18,16 @@ import {
           p={6}
           maxW={'180px'}
           w={'full'}
-          boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          
+          boxShadow="rgb(1, 255, 242) 0px 3px 8px;"
           rounded={'lg'}
           bg={"white"}
-          h={'220px'}
+          h={'200px'}
          >
           <Box
             rounded={'lg'}
             mt={0}
-            height={'70%'}
+            height={'60%'}
             >
             <Image
               rounded={'lg'}
