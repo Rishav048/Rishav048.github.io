@@ -1,33 +1,54 @@
 
+import { Image } from '@chakra-ui/react';
 import Carousel from 'react-bootstrap/Carousel';
 
 function CarouselComponent() {
   return (
-    <Carousel style={{ marginRight:"60px", width:'100%',height:'100%' }}  >
-      <Carousel.Item >
-        <img
+    <Carousel
+      style={{
+        width: "100%",
+        height: "350px",
+        border: "0px solid red",
+      }}
+    >
+      <Carousel.Item
+        style={{ border: "0px solid yellow", width: "100%", height: "350px" }}
+      >
+        <Image
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
           className="d-block w-100"
           src="https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966"
           alt="First slide"
         />
-       
       </Carousel.Item>
-      <Carousel.Item>
-        <img
+      <Carousel.Item
+        style={{ border: "0px solid yellow", width: "100%", height: "350px" }}
+      >
+        <Image
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
           className="d-block w-100"
-          src="https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966"
+          src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif"
           alt="Second slide"
         />
-
-       
       </Carousel.Item>
-      <Carousel.Item>
-        <img
+      <Carousel.Item
+        style={{ border: "0px solid yellow", width: "100%", height: "350px" }}
+      >
+        <Image
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
           className="d-block w-100"
-          src="https://camo.githubusercontent.com/40165a147c3dcea0fa1db780bb533fc5f98546ccfb9d5d05ddb2f429277f5348/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966"
+          src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966"
           alt="Third slide"
         />
-
       </Carousel.Item>
     </Carousel>
   );

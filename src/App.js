@@ -6,11 +6,12 @@ import Skills from './Components/Skills';
 import Educations from './Components/Educations';
 import Projects from './Components/Projects';
 import ContactMe from './Components/ContactMe';
+import GithubCalender from './Components/GithubCalender';
 
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <ContentSec />
       <br />
@@ -24,15 +25,15 @@ function App() {
       <br />
       <Projects />
       <br />
+      <br />
+      <hr />
+      <br />
+      <GithubCalender />
+      <br />
       <hr />
       <br />
       <ContactMe />
-     
-
-
-
-      
-    </div>
+    </>
   );
 }
 

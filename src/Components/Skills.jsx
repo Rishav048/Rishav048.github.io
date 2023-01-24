@@ -63,18 +63,18 @@ function Skills() {
 
 
   return (
-    <Box h={'fit-content'} bg={'#cbd5e0'}>
-        <hr />
-        <Heading textAlign={'center'} color={'blue.600'} >Skills</Heading>
-        <Slider {...settings}>
-        
-            {SkillsImg.map((el)=> (
-                <SkillCard key={el.src} src={el.src}  name={el.name}  />
-            ))}
-
-        </Slider>
-      </Box>
-  )
+    <Box id="skills" h={"fit-content"} bg={"#cbd5e0"}>
+      <hr />
+      <Heading textAlign={"center"} color={"blue.600"}>
+        Skills
+      </Heading>
+      <Slider {...settings}>
+        {SkillsImg.map((el) => (
+          <SkillCard key={el.src} src={el.src} name={el.name} />
+        ))}
+      </Slider>
+    </Box>
+  );
 }
 
 export default Skills

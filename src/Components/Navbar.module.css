@@ -1,0 +1,28 @@
+.navitems:hover{
+border-bottom:4px solid #F6C461;
+color:#F6C461;
+font-weight:semibold;
+font-size:18px;
+
+} 
+
+.navitems :active {
+border-bottom:4px solid #F6C461;
+color:#F6C461;
+font-weight:semibold;
+font-size:18px
+}
+
+
+.navbardiv{
+    position: fixed;
+    z-index: 1;
+}
+
+.navitems{
+    border:0px solid blue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
