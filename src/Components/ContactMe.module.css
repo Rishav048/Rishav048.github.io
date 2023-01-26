@@ -1,9 +1,0 @@
-
-.contactbox{
-    border-radius:10px
-}
-
-.contactbox:hover {
-    box-shadow: rgb(1, 255, 242) 0px 8px 24px;
-    transition: 2s;
-  }

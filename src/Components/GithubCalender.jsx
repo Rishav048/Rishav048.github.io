@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 import React from 'react'
 import GitHubCalendar from "react-github-calendar";
 
@@ -6,16 +6,18 @@ const GithubCalender = () => {
   return (
     <Box
       pt={{ base: 3, md: 4, lg: 8 }}
-      pb={{ base: 3, md: 4, lg: 8 }}
+      pb={{ base: 5, md: 6, lg: "30px" }}
       border={"0px solid blue"}
       h={"auto"}
+     
     >
       <Heading textAlign={"center"} color={"blue.600"}>
-        Github Calender
+        GitHub Calender
       </Heading>
 
-      <Flex justify={"center"} align={"center"} mt={{ base: 6, md: 7, lg: 10 }}>
+      <Flex justify={"center"} align={"center"} mt={{ base: 6, md: 7, lg: 8 }}>
         <Box
+          bg={"white"}
           w={"fit-content"}
           boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}
           p={4}
@@ -32,6 +34,11 @@ const GithubCalender = () => {
             blockMargin={5}
             fontSize={16}
           />
+          <Image
+            w={"100%"}
+            h={{ base: "100px", md: "150px",lg:'200px'}}
+            src="https://github-readme-streak-stats.herokuapp.com/?user=Rishav048&theme=light&background=cbd5e0"
+          ></Image>
         </Box>
       </Flex>
     </Box>

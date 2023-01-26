@@ -6,10 +6,7 @@ import {
   
 } from '@chakra-ui/react';
 import style from "./Navbar.module.css"
-
-
-
-
+import RishavNameLogo from "./RishavNameLogo.png";
 
 
 export default function Navbar() {
@@ -19,18 +16,18 @@ export default function Navbar() {
       <Box
         display={"flex"}
         w={"100%"}
-        justifyContent={"space-between"}
+        justifyContent={"space-around"}
         className={style.navbardiv}
         bg="#2a2b2b"
         mb="0.2vh"
-        pl={{ base: "5px", md: "25px", lg: "40px" }}
-        paddingRight={{ base: "15px", md: "50px", lg: "40px" }}
+        paddingRight={{ base: "10px", md: "50px", lg: "40px" }}
+        pl={{ base: "10px", md: "50px", lg: "40px" }}
         border={"0px solid red"}
         borderBottom={"0px solid yellow"}
         boxShadow="2xl"
       >
         <Flex
-          w={{ base: "95%", md: "70%", lg: "60%" }}
+          w={{ base: "90%", md: "70%", lg: "60%" }}
           border={"0px solid blue"}
           h={16}
           alignItems={"center"}
@@ -43,7 +40,13 @@ export default function Navbar() {
             color="white"
             className={style.navitems}
           >
-            <Link to="" spy={true} smooth={true} offset={50} duration={500}>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={300}
+            >
               Home
             </Link>
           </Box>
@@ -58,7 +61,7 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={500}
+              duration={300}
             >
               About
             </Link>
@@ -74,7 +77,7 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               offset={-140}
-              duration={500}
+              duration={300}
             >
               Skills
             </Link>
@@ -90,7 +93,7 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={500}
+              duration={300}
             >
               Projects
             </Link>
@@ -106,7 +109,7 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={300}
             >
               Contact
             </Link>
@@ -117,15 +120,14 @@ export default function Navbar() {
             color="white"
             className={style.navitems}
           >
-            <Link
-              to="Resume"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
+            <a
+              href="https://drive.google.com/file/d/19-zdgD5fW1qK92wTNfr19QYR4vV3StG5/view?usp=share_link"
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{ color: "inherit" }}
             >
               Resume
-            </Link>
+            </a>
           </Box>
         </Flex>
 
@@ -142,15 +144,9 @@ export default function Navbar() {
               spy={true}
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={300}
             >
-              <Image
-                w={"50px"}
-                borderRadius={"50%"}
-                src={
-                  "https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-01-02/new_776068.jpeg"
-                }
-              />
+              <Image w={"40px"} borderRadius={"50%"} src={RishavNameLogo} />
             </Link>
           </Box>
         </Box>

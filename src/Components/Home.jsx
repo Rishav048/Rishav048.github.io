@@ -7,13 +7,14 @@ import {
     Text,
   } from '@chakra-ui/react';
   import { DownloadIcon } from '@chakra-ui/icons'
+  import { Link } from "react-scroll";
 
 
 
-  export default function ContentSec() {
+  export default function Home() {
     return (
       <Stack
-        id="contentsec"
+        id="home"
         border={"0px solid black"}
         h={{ base: "auto", md: "400px", lg: "500px" }}
         pt={"90px"}
@@ -53,7 +54,9 @@ import {
               fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
             >
               <Text color={"blue.600"} as={"span"}>
-                Hi 👋, I'am<br/>Rishav Chakraborty
+                Hi 👋, I'am
+                <br />
+                Rishav Chakraborty
               </Text>
             </Heading>
             <Text
@@ -67,28 +70,41 @@ import {
               coding and looking for an opportunity in software development.
             </Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-              <Button
-                rounded={"full"}
-                bg={"blue.400"}
-                color={"white"}
-                _hover={{
-                  bg: "gray.200",
-                  color: "black",
-                }}
+              <a
+                href="./Rishav_Chakraborty_Resume.pdf"
+                download={"Rishav_Chakraborty_Resume.pdf"}
               >
-                Download CV
-                <DownloadIcon />
-              </Button>
-              <Button
-                rounded={"full"}
-                _hover={{
-                  bg: "blue.400",
-                  color: "white",
-                }}
-              >
-                {" "}
-                Contact Me
-              </Button>
+                <Button
+                  rounded={"full"}
+                  bg={"blue.400"}
+                  color={"white"}
+                  _hover={{
+                    bg: "gray.200",
+                    color: "black",
+                  }}
+                >
+                  <Text m={"4px"}>Resume</Text>
+                  <DownloadIcon />
+                </Button>
+              </a>
+               <Link
+              to="contactme"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={300}
+            >
+                <Button
+                  rounded={"full"}
+                  _hover={{
+                    bg: "blue.400",
+                    color: "white",
+                  }}
+                >
+                  {" "}
+                  Contact Me
+                </Button>
+              </Link>
             </Stack>
           </Stack>
         </Flex>
