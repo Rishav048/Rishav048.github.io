@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.41771d02.css",
-    "main.js": "/static/js/main.2f5aa0f9.js",
+    "main.css": "/static/css/main.7e255fab.css",
+    "main.js": "/static/js/main.0a047c56.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/RishavNameLogo.png": "/static/media/RishavNameLogo.dca47ae956f0994f3ec4.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,12 +9,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.41771d02.css.map": "/static/css/main.41771d02.css.map",
-    "main.2f5aa0f9.js.map": "/static/js/main.2f5aa0f9.js.map",
+    "main.7e255fab.css.map": "/static/css/main.7e255fab.css.map",
+    "main.0a047c56.js.map": "/static/js/main.0a047c56.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41771d02.css",
-    "static/js/main.2f5aa0f9.js"
+    "static/css/main.7e255fab.css",
+    "static/js/main.0a047c56.js"
   ]
 }
