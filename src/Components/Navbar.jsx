@@ -121,7 +121,7 @@ export default function Navbar() {
             className={style.navitems}
           >
             <a
-              href="https://drive.google.com/file/d/19-zdgD5fW1qK92wTNfr19QYR4vV3StG5/view?usp=share_link"
+              href="https://drive.google.com/file/d/1Cf-LzAsffKnlKtRYU2TxMHSyGsM6NTqI/view?usp=share_link"
               target="_blank"
               rel="noreferrer noopener"
               style={{ color: "inherit" }}

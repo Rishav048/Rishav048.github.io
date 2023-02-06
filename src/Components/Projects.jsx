@@ -4,19 +4,23 @@ import React from 'react'
 import style from "./Projects.module.css"
 
 const DeployedLink = {
-    maxfashion_D_Link : "https://adorable-kitten-07d0ff.netlify.app/",
-    kfc_D_Link : "https://transcendent-stardust-f3081b.netlify.app/",
-    nykaa_D_Link : "https://scintillating-meringue-fdf589.netlify.app/",
-}
+  maxfashion_D_Link: "https://adorable-kitten-07d0ff.netlify.app/",
+  kfc_D_Link: "https://transcendent-stardust-f3081b.netlify.app/",
+  nykaa_D_Link: "https://scintillating-meringue-fdf589.netlify.app/",
+  healthkart_D_Link: "https://github.com/akaushik509/internal-appliance-3345",
+};
 
 const GithubLink = {
     maxfashionGithub :"https://github.com/Rishav048/phobic-lumber-7659",
     kfcGithub :"https://github.com/Rishav048/-unique-stretch-3372",
     nykaaGithub : "https://github.com/Rishav048/rustic-bone-9818",
+    healthkartGithub : "https://github.com/akaushik509/internal-appliance-3345"
 }
 
-const {maxfashion_D_Link ,kfc_D_Link, nykaa_D_Link} = DeployedLink;
-const {maxfashionGithub ,kfcGithub , nykaaGithub} = GithubLink;
+const { maxfashion_D_Link, kfc_D_Link, nykaa_D_Link, healthkart_D_Link } =
+  DeployedLink;
+const { maxfashionGithub, kfcGithub, nykaaGithub, healthkartGithub } =
+  GithubLink;
 
 
 const Projects = () => {
@@ -33,6 +37,89 @@ const Projects = () => {
               gap={"40px"}
               className={style.portfolio}
             >
+              {/* ................ 1st Project(Health Kart) .................. */}
+
+              <div className={style.portfoliocontent}>
+                <div className={style.portfolioimg}>
+                  <Box className={style.upperBox}>
+                    <div className={style.projectName}>
+                      <h3>
+                        <img
+                          className={style.logoImg}
+                          src="https://i.ibb.co/KNkk7GQ/logo-withname.png"
+                          alt="Logo"
+                        />{" "}
+                        HealthKart.com - Clone
+                      </h3>
+                    </div>
+                    <div className={style.aboutProject}>
+                      <p style={{ textAlign: "left", color: "blue" }}>
+                        About Project :
+                      </p>
+                      <p style={{ fontSize: "14px", textAlign: "left" }}>
+                        HealthKart is an online health and fitness store which
+                        sells authentic health supplements, fitness equipment,
+                        protein supplements, sports gear and wellness products.
+                        Here I Implemented functionalities like
+                        Carousel, filter, sorting, pagination, dynamic products per page,
+                        adding products.
+                      </p>
+                    </div>
+                    <br></br>
+                    <img
+                      className={style.projectimg}
+                      src="https://user-images.githubusercontent.com/26029251/215933811-50a82010-8114-476c-9627-e2484710c93a.png"
+                      alt="Health Kart SS"
+                    />
+                  </Box>
+                  <br></br>
+                  <div className={style.Techstacks}>
+                    <p style={{ textAlign: "left", color: "blue" }}>
+                      Tech Stacks :
+                    </p>
+                    <p style={{ fontSize: "13px" }}>
+                      Next.js | Redux | CSS | Chakra UI
+                    </p>
+                  </div>
+                  <Flex mt={"30px"} pt={"20px"} justifyContent={"space-evenly"}>
+                    <button className={style.btn}>
+                      <Link href={healthkartGithub}>
+                        <img
+                          style={{
+                            borderRadius: "50%",
+                            background: "white",
+                            marginRight: "5px",
+                            display: "inline",
+                            width: "20px",
+                            height: "20px",
+                          }}
+                          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                          alt="GitIcon"
+                        />{" "}
+                        Github
+                      </Link>
+                    </button>
+
+                    <button className={style.btn}>
+                      <Link href={healthkart_D_Link}>
+                        <img
+                          style={{
+                            borderRadius: "50%",
+                            background: "white",
+                            marginRight: "5px",
+                            display: "inline",
+                            width: "20px",
+                            height: "20px",
+                          }}
+                          src="https://cdn-icons-png.flaticon.com/512/0/375.png"
+                          alt="PlayIcon"
+                        />{" "}
+                        Live
+                      </Link>
+                    </button>
+                  </Flex>
+                </div>
+              </div>
               {/* ****************** Nykaa ********************* */}
               <div className={style.portfoliocontent}>
                 <div className={style.portfolioimg}>
@@ -118,7 +205,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* ................ 2nd Project - (KFC) .................. */}
+              {/* ................ 3rd Project - (KFC) .................. */}
               <div className={style.portfoliocontent}>
                 <div className={style.portfolioimg}>
                   <Box className={style.upperBox}>
@@ -130,7 +217,7 @@ const Projects = () => {
                       />
                       <h3>KFC - Clone</h3>
                     </div>
-                    <div className={style.aboutProject}>
+                    <Box className={style.aboutProject}>
                       <p style={{ textAlign: "left", color: "blue" }}>
                         About Project :
                       </p>
@@ -141,7 +228,7 @@ const Projects = () => {
                         functionality, Adding & Removing products from cart,
                         Helped in making dynamic admin dashboard.
                       </p>
-                    </div>
+                    </Box>
                     <br></br>
                     <img
                       className={style.projectimg}
@@ -150,12 +237,15 @@ const Projects = () => {
                     />
                   </Box>
                   <br></br>
-                  <div className={style.Techstacks}>
+                  <Box  className={style.Techstacks}>
                     <p style={{ textAlign: "left", color: "blue" }}>
                       Tech Stacks :
                     </p>
-                    <p style={{ fontSize: "13px" }}>HTML | CSS | JavaScript  <Text display={{md:'null',lg:'none'}} >Adjust</Text></p>
-                  </div>
+                    <p style={{ fontSize: "13px" }}>
+                      HTML | CSS | JavaScript{" "}
+                      <Text display={{ md: "null", lg: "none" }}>Adjust</Text>
+                    </p>
+                  </Box>
                   <Flex
                     border={"0px solid red"}
                     mt={"30px"}
@@ -201,87 +291,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* ................ 3rd Project - (MAX FASHION) .................. */}
-
-              <div className={style.portfoliocontent}>
-                <div className={style.portfolioimg}>
-                  <Box className={style.upperBox}>
-                    <div className={style.projectName}>
-                      <h3>
-                        <img
-                          className={style.logoImg}
-                          src="https://www.landmarkgroup.com/int/sites/default/files/Brand-logo/New%20Max%20Logo-%20Eng%20With%20Outline_1.png"
-                          alt="Logo"
-                        />{" "}
-                        Max Fashion - Clone
-                      </h3>
-                    </div>
-                    <div className={style.aboutProject}>
-                      <p style={{ textAlign: "left", color: "blue" }}>
-                        About Project :
-                      </p>
-                      <p style={{ fontSize: "14px", textAlign: "left" }}>
-                        Max Fashion is an e-commerce website, offers apparel,
-                        footwear and accessories for the entire family - women,
-                        men and children. Here I implemented some
-                        functionalities like Login, Signup, Product's Page,
-                        Filtering, Adding & Removing products from cart, etc.
-                      </p>
-                    </div>
-                    <br></br>
-                    <img
-                      className={style.projectimg}
-                      src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-01-11/Screenshot%20%2838%29_662577.png"
-                      alt="Max Fashion SS"
-                    />
-                  </Box>
-                  <br></br>
-                  <div className={style.Techstacks}>
-                    <p style={{ textAlign: "left", color: "blue" }}>
-                      Tech Stacks :
-                    </p>
-                    <p style={{ fontSize: "13px" }}>HTML | CSS | JavaScript</p>
-                  </div>
-                  <Flex mt={"30px"} pt={"20px"} justifyContent={"space-evenly"}>
-                    <button className={style.btn}>
-                      <Link href={maxfashionGithub}>
-                        <img
-                          style={{
-                            borderRadius: "50%",
-                            background: "white",
-                            marginRight: "5px",
-                            display: "inline",
-                            width: "20px",
-                            height: "20px",
-                          }}
-                          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                          alt="GitIcon"
-                        />{" "}
-                        Github
-                      </Link>
-                    </button>
-
-                    <button className={style.btn}>
-                      <Link href={maxfashion_D_Link}>
-                        <img
-                          style={{
-                            borderRadius: "50%",
-                            background: "white",
-                            marginRight: "5px",
-                            display: "inline",
-                            width: "20px",
-                            height: "20px",
-                          }}
-                          src="https://cdn-icons-png.flaticon.com/512/0/375.png"
-                          alt="PlayIcon"
-                        />{" "}
-                        Live
-                      </Link>
-                    </button>
-                  </Flex>
-                </div>
-              </div>
-              {/* ................ 4th Project .................. */}
+              {/* ................ 4rth Project - (MAX FASHION) .................. */}
 
               <div className={style.portfoliocontent}>
                 <div className={style.portfolioimg}>

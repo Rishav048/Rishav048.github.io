@@ -127,6 +127,15 @@
     clip-path: inset(0 0 2% 0);
   }
 
+  @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .portfoliocontent:hover  .Techstacks{
+    margin-top: 25px;
+    clip-path: inset(0 0 2% 0);
+  }
+}
+
+
   .upperBox{
     border: 0px solid black;
     height: 350px;

@@ -10,6 +10,19 @@ import {
   import { Link } from "react-scroll";
 
 
+  const handleResume = ()=>{
+    fetch("Rishav_Chakraborty_Resume.pdf").then ((res)=>{
+      res.blob().then((blob)=>{
+        const fileUrl = window.URL.createObjectURL(blob);
+        let file = document.createElement("a");
+        file.href = fileUrl;
+        file.download = "Rishav_Chakraborty_Resume.pdf";
+        file.click();
+        file.target= "_blank"
+      });
+    });
+  }
+
 
   export default function Home() {
     return (
@@ -70,11 +83,9 @@ import {
               coding and looking for an opportunity in software development.
             </Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-              <a
-                href="./Rishav_Chakraborty_Resume.pdf"
-                download={"Rishav_Chakraborty_Resume.pdf"}
-              >
+              
                 <Button
+                  onClick={handleResume}
                   rounded={"full"}
                   bg={"blue.400"}
                   color={"white"}
@@ -86,14 +97,14 @@ import {
                   <Text m={"4px"}>Resume</Text>
                   <DownloadIcon />
                 </Button>
-              </a>
-               <Link
-              to="contactme"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={300}
-            >
+             
+              <Link
+                to="contactme"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={300}
+              >
                 <Button
                   rounded={"full"}
                   _hover={{
