@@ -1,4 +1,4 @@
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 import {
   Box,
   Button,
@@ -6,27 +6,25 @@ import {
   Image,
   Text,
   useDisclosure,
-  
-} from '@chakra-ui/react';
-import style from "./Navbar.module.css"
+} from "@chakra-ui/react";
+import style from "./Navbar.module.css";
 import RishavNameLogo from "./RishavNameLogo.png";
 import NavbarHamburger from "./NavbarHamburger";
 
-
 export default function Navbar() {
-   const { isOpen, onOpen, onClose } = useDisclosure();
-   const handleResume = () => {
-     fetch("fw21_0959-Rishav-Chakraborty-Resume.pdf").then((res) => {
-       res.blob().then((blob) => {
-         const fileUrl = window.URL.createObjectURL(blob);
-         let file = document.createElement("a");
-         file.href = fileUrl;
-         file.download = "fw21_0959-Rishav-Chakraborty-Resume.pdf";
-         file.click();
-         file.target = "_blank";
-       });
-     });
-   };
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleResume = () => {
+    fetch("fw21_0959-Rishav-Chakraborty-Resume.pdf").then((res) => {
+      res.blob().then((blob) => {
+        const fileUrl = window.URL.createObjectURL(blob);
+        let file = document.createElement("a");
+        file.href = fileUrl;
+        file.download = "fw21_0959-Rishav-Chakraborty-Resume.pdf";
+        file.click();
+        file.target = "_blank";
+      });
+    });
+  };
 
   return (
     <>
@@ -65,11 +63,7 @@ export default function Navbar() {
             color={"black"}
             fontWeight={"bold"}
           >
-            <Box
-              
-              color="white"
-              className={style.navitems}
-            >
+            <Box color="white" className={style.navitems}>
               <Link
                 to="home"
                 spy={true}
@@ -83,11 +77,7 @@ export default function Navbar() {
               </Link>
             </Box>
 
-            <Box
-              
-              color="white"
-              className={style.navitems}
-            >
+            <Box color="white" className={style.navitems}>
               <Link
                 to="about"
                 spy={true}
@@ -101,11 +91,7 @@ export default function Navbar() {
               </Link>
             </Box>
 
-            <Box
-              
-              color="white"
-              className={style.navitems}
-            >
+            <Box color="white" className={style.navitems}>
               <Link
                 to="skills"
                 spy={true}
@@ -119,11 +105,7 @@ export default function Navbar() {
               </Link>
             </Box>
 
-            <Box
-              
-              color="white"
-              className={style.navitems}
-            >
+            <Box color="white" className={style.navitems}>
               <Link
                 to="projects"
                 spy={true}
@@ -137,11 +119,7 @@ export default function Navbar() {
               </Link>
             </Box>
 
-            <Box
-              
-              color="white"
-              className={style.navitems}
-            >
+            <Box color="white" className={style.navitems}>
               <Link
                 to="contactme"
                 spy={true}
@@ -161,7 +139,7 @@ export default function Navbar() {
               className={style.navitems}
             >
               <a
-                href="https://drive.google.com/file/d/1Cf-LzAsffKnlKtRYU2TxMHSyGsM6NTqI/view?usp=share_link"
+                href="https://drive.google.com/file/d/1N1OmwtBPtYTG9tXFByeynqBLHvQKG4FP/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer noopener"
                 style={{ color: "inherit" }}
