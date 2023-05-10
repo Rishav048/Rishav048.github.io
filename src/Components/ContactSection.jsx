@@ -25,6 +25,7 @@ import {
   MdOutlineEmail,
 } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
+import { IoMailOpenOutline } from "react-icons/io5";
 
 export default function ContactSection() {
   return (
@@ -109,8 +110,7 @@ export default function ContactSection() {
                     px={5}
                     alignItems="flex-start"
                   >
-                   
-                    <Link href={"https://github.com/Rishav048"}>
+                    <Link href={"https://github.com/Rishav048"} isExternal>
                       <IconButton
                         aria-label="github"
                         variant="ghost"
@@ -124,6 +124,7 @@ export default function ContactSection() {
                       href={
                         "https://www.linkedin.com/in/rishav-chakraborty048/"
                       }
+                      isExternal
                     >
                       <IconButton
                         aria-label="linkedin"
@@ -134,6 +135,20 @@ export default function ContactSection() {
                         icon={<BsLinkedin size="28px" />}
                       />
                     </Link>
+                    <a
+                      href="mailto:chakrabortyrishav048@gmail.com"
+                      title="chakrabortyrishav048@gmail.com"
+                      target="blank"
+                    >
+                      <IconButton
+                        aria-label="Email"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#0D74FF" }}
+                        icon={<IoMailOpenOutline size="30px" />}
+                      />
+                    </a>
                   </HStack>
                 </Box>
               </WrapItem>

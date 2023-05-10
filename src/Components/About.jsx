@@ -18,6 +18,7 @@ import {
         h={{ base: "auto", md: "500px", lg: "500px" }}
         pt={10}
         border={"0px solid black"}
+       
       >
         <SimpleGrid
           justifyContent={"space-between"}
@@ -31,19 +32,27 @@ import {
             alignItems={"center"}
             justifyContent={"center"}
           >
-            <Box >
+            <Box>
               <CarouselComponent />
             </Box>
           </Flex>
 
           <Stack id="about" spacing={4} border={"0px solid green"}>
-            <Heading textAlign={{base:'center',md:'left',lg:'left'}} color={"blue.600"}>
+            <Heading
+              textAlign={{ base: "center", md: "left", lg: "left" }}
+              color={"blue.600"}
+            >
               About Me
             </Heading>
             <hr
               style={{ color: "black", height: "3px", fontWeight: "bolder" }}
             />
-            <Text textAlign={"left"} color={"gray.500"} fontSize={{base:'md',md:'lg',lg:'lg'}}>
+            <Text
+              textAlign={{ base: "center", md: 'left',lg:'left' }}
+              color={"gray.500"}
+              fontSize={{ base: "17px", md: "lg", lg: "lg" }}
+              border={'0px solid red'}
+            >
               A self-motivated, hard-working, and ambitious Full-Stack Web
               Developer and a good learner with proficiency in JavaScript.
               Having a Problem-solving mindset, and 1200+ hrs of hands-on

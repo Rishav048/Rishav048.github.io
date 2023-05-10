@@ -16,13 +16,13 @@ import {
         <Box
           role={'group'}
           p={6}
-          maxW={'180px'}
+          maxW={'190px'}
           w={'full'}
           
           boxShadow="rgb(1, 255, 242) 0px 3px 8px;"
           rounded={'lg'}
           bg={"white"}
-          h={'200px'}
+          h={'210px'}
          >
           <Box
             rounded={'lg'}
@@ -30,9 +30,10 @@ import {
             height={'60%'}
             >
             <Image
+              p={3}
               rounded={'lg'}
               height={120}
-              width={100}
+              width={120}
               objectFit={'cover'}
               src={src}
               margin="auto"

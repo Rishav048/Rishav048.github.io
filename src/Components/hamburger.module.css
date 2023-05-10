@@ -1,8 +1,8 @@
 .navitems:hover{
-border-bottom:4px solid #F6C461;
-color:#F6C461;
+
+color:#365dca;
 font-weight:semibold;
-font-size:21px;
+font-size:22px;
 
 } 
 
@@ -15,12 +15,10 @@ font-size:21px;
 
 .navitems{
     border:0px solid blue;
-    text-align: left;
     color:#F6C461;
     font-weight:bold;
+    font-size:20px;
+    margin-bottom: 16px;
+    text-align: center;
     
-    justify-content: center;
-    align-items: center;
-     margin: auto;
-     font-size:17px;
 }
