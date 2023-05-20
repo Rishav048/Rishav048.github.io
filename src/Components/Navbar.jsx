@@ -14,12 +14,12 @@ import NavbarHamburger from "./NavbarHamburger";
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleResume = () => {
-    fetch("fw21_0959-Rishav-Chakraborty-Resume.pdf").then((res) => {
+    fetch("Rishav-Chakraborty-Resume.pdf").then((res) => {
       res.blob().then((blob) => {
         const fileUrl = window.URL.createObjectURL(blob);
         let file = document.createElement("a");
         file.href = fileUrl;
-        file.download = "fw21_0959-Rishav-Chakraborty-Resume.pdf";
+        file.download = "Rishav-Chakraborty-Resume.pdf";
         file.click();
         file.target = "_blank";
       });
@@ -139,7 +139,7 @@ export default function Navbar() {
               className={style.navitems}
             >
               <a
-                href="https://drive.google.com/file/d/1N1OmwtBPtYTG9tXFByeynqBLHvQKG4FP/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MKQsLhKH8YgK0kjiFeA_bsfdPTwVmrUa/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer noopener"
                 style={{ color: "inherit" }}
