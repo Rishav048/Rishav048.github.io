@@ -3,12 +3,12 @@ import { DownloadIcon } from "@chakra-ui/icons";
 import { Link } from "react-scroll";
 
 const handleResume = () => {
-  fetch("Rishav-Chakraborty-Resume.pdf").then((res) => {
+  fetch("Rishav_Chakraborty_Resume.pdf").then((res) => {
     res.blob().then((blob) => {
       const fileUrl = window.URL.createObjectURL(blob);
       let file = document.createElement("a");
       file.href = fileUrl;
-      file.download = "Rishav-Chakraborty-Resume.pdf";
+      file.download = "Rishav_Chakraborty_Resume.pdf";
       file.click();
       file.target = "_blank";
     });
